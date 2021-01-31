@@ -55,12 +55,12 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <p style={{ textAlign: "center" }}>
+        {/* <p style={{ textAlign: "center" }}>
           {" "}
           this is our count: {this.state.counter}{" "}
         </p>
         <button onClick={this.increment}>Increment </button>
-        <button onClick={this.decrement}>Decrement</button>
+        <button onClick={this.decrement}>Decrement</button> */}
 
         <center>
           <button style={{ textAlign: "center" }} onClick={() => this.image()}>

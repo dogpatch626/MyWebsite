@@ -13,7 +13,10 @@ var color = "#" + z1 + x;
 class Nav extends Component {
   render() {
     return (
-      <div className="row">
+      <div
+        className="row"
+        style={{ backgroundColor: "#DFDDEF", paddingBottom: "100px" }}
+      >
         <center>
           <div className="col-md-5">
             <Link to="/">

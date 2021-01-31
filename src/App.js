@@ -15,6 +15,9 @@ import { extendTheme } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 import HomePage from "./pages/home";
 import Navbar from "./components/navbar";
+import Card from "react-bootstrap/Card";
+import About from "./pages/about";
+import Footer from "./components/footer";
 // const colors = {
 //   brand: {
 //     900: "#1a365d",
@@ -26,7 +29,7 @@ import Navbar from "./components/navbar";
 //const theme = extendTheme(colors);
 function App() {
   return (
-    <div className="">
+    <div className="" style={{ backgroundColor: "#DFDDEF", height: "100%" }}>
       {/* <ChakraProvider theme={theme}>
         <Box bg="tomato" w="100%" p={4} color="white">
           This is the Box
@@ -37,13 +40,12 @@ function App() {
         <Route exact path="/" component={HomePage}>
           {/* <Counter /> */}
         </Route>
-        <Route exact path="/about">
-          <h1>about</h1>
-        </Route>
+        <Route exact path="/about" component={About}></Route>
       </Router>
       {/* <Counter />  */}
       {/* <Learn /> */}
       {/* </ChakraProvider> */}
+      <Footer />
     </div>
   );
 }
